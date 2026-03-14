@@ -1473,9 +1473,6 @@ while (log.children.length > 20) {
 log.removeChild(log.lastChild);
 }
 } catch (e) {
-    addLog(`ERR: ${e.message} | ${message.toString().substring(0, 120)}`);
-}
-}
 console.error('Log error:', e);
 }
 }
